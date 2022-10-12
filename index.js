@@ -91,7 +91,7 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 reviews[7].feedback = 'this place is chill with really cool people, great for getting work done on weekdays';
-console.log('Task 5', reviews);
+console.log('Task 4', reviews);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -106,11 +106,15 @@ Use the addReview function below to do the following:
 */
 
 
-function addReview(array, number){
-
-  
-}
-
+function addReview(array, namev, ratingv, feedbackv){
+  array.push({
+  name: namev,
+  rating: ratingv,
+  feedback: feedbackv
+ })
+ }
+ addReview(reviews,'Billy', 2, 'Lame Food')
+   console.log(reviews)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
